@@ -1,0 +1,5 @@
+# Per-Edition variables ({edition.*} in pages).
+# The recipe's (tools/rebuild/integration/tree/), as WSO2 Integrator's.
+self-hosted:
+  displayName: Agent Builder {version}
+  productName: WSO2 Agent Builder

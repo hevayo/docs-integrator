@@ -1,0 +1,27 @@
+# Doc space manifest (schemas/docspace.schema.json in wso2/docs-platform).
+# The recipe's (tools/rebuild/integration/tree/), for the Sub Doc space converted
+# from wso2/docs-integrator@wso2-agent-builder; model decisions 3, 5, 13
+# (.scratch/integration-platform-model/map.md). Its own Doc space, not a Sub Doc
+# space of integration, and named Agent Builder (user, 2026-11-16): its pages
+# show its own sidebar, at /agent-builder/<version>/.
+schemaVersion: 1
+slug: agent-builder
+displayName: Agent Builder
+editionNames:
+  selfHosted: Agent Builder {version}
+home: integration
+owners:
+  team: integration-docs
+repo: hevayo/docs-integrator
+editLinks: true
+issues:
+  repo: wso2/docs-integrator
+latest: 1.0.0
+editions:
+  - id: 1.0.0
+# The live site labels 1.0 "1.0-beta"; the Platform has no beta status (model
+# decision 5). The wording is a placeholder for the team to write.
+notices:
+  - text: Agent Builder 1.0.0 is a beta release.
+    level: info
+    editions: [1.0.0]
