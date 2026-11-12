@@ -1,0 +1,111 @@
+---
+title: Deploy and Run
+description: Learn about the ways to deploy agents built in Choreo Agent Builder, from Choreo Cloud to your own infrastructure, and how to run them once they're live.
+type: how-to
+sidebar_label: Overview
+sidebar_position: 0
+hide_table_of_contents: true
+keywords:
+  - choreo agent builder
+  - deployment
+  - choreo agent manager
+  - choreo cloud
+  - docker
+  - kubernetes
+  - virtual machine
+  - ci/cd
+  - integration control plane
+layout: overview
+---
+
+Once your agent works in Choreo Agent Builder, this section covers how to ship it and how to run it in production.
+
+You deploy from the **Deploy** panel on an agentic integration's overview, or from the **Deploy** menu on the project overview.
+
+## Deploy
+
+Choose where your agents run. Where you deploy also decides how you [manage](../manage/index.mdx) and [observe](../observe/index.mdx) them.
+
+
+### Deploy to Choreo Agent Manager
+
+- Run and manage your organization's agents in one place
+- Connect to your Agent Manager instance
+- Builds from your GitHub repository
+
+[Deploy to Choreo Agent Manager →](./deploy-to-choreo-agent-manager/index.mdx)
+
+
+### Deploy to Choreo Cloud
+
+- Fully managed, with no infrastructure to set up
+- Deploy one agentic integration or a whole project
+- Builds from your Git repository
+
+[Deploy to Choreo Cloud →](./deploy-to-choreo-cloud/index.mdx)
+
+
+### Self-Hosted Deployment
+
+Run integrations on infrastructure you manage.
+
+- [Containers](./self-hosted/containerized-deployment.mdx)
+- [Virtual machines](./self-hosted/vm-deployment.mdx)
+- [Serverless](./self-hosted/serverless-deployment.mdx)
+- [GraalVM native images](./self-hosted/graalvm-native-images.mdx)
+
+
+### CI/CD
+
+Automate your deployment pipeline.
+
+- [GitHub Actions](./cicd/github-actions.mdx)
+- [Jenkins](./cicd/jenkins.mdx)
+- [GitLab](./cicd/gitlab.mdx)
+- [Azure DevOps](./cicd/azure-devops.mdx)
+
+
+
+## Run in production
+
+
+### Managing Configurations
+
+- Externalize runtime configuration values
+- Per-environment files and variables
+
+[Managing Configurations →](./managing-configurations.mdx)
+
+
+### Secure Integrations
+
+- [Runtime security](./secure/runtime-security.mdx)
+- [Authentication](./secure/authentication.mdx)
+- [API security](./secure/api-security-rate-limiting.mdx)
+- [Secrets and encryption](./secure/secrets-encryption.mdx)
+- [Compliance](./secure/compliance-considerations.mdx)
+- [AWS access](./secure/aws-access.mdx)
+
+
+### Manage
+
+- Configuration and lifecycle of deployed agents
+- Integration Control Plane
+
+[Manage →](../manage/index.mdx)
+
+
+### Observe
+
+- Logs, metrics, and traces
+
+[Observe →](../observe/index.mdx)
+
+
+
+## What's next
+
+- [Deploy to Choreo Agent Manager](./deploy-to-choreo-agent-manager/index.mdx) — Deploy your agent to your Agent Manager instance.
+- [Deploy to Choreo Cloud](./deploy-to-choreo-cloud/index.mdx) — Deploy your agent to the fully managed Choreo Cloud.
+- [Containerized Deployment](./self-hosted/containerized-deployment.mdx) — Run your agent on Docker, Kubernetes, or Red Hat OpenShift.
+- [Concepts](../get-started/concepts/index.mdx) — Deployment options, environments, and promotion.

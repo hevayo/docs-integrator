@@ -1,0 +1,9 @@
+# Integrator: the next version, not yet released (no listed Edition).
+# Written by tools/rebuild/edition-folders.mjs (Edition layout: folders).
+schemaVersion: 1
+docSpace: integrator
+id: next
+name: Integrator next
+variables:
+  productName: WSO2 Integrator
+  displayName: WSO2 Integrator {version}

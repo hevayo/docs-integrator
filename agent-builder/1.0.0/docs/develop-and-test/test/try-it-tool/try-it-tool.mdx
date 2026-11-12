@@ -1,0 +1,30 @@
+---
+title: Try-It Tool
+description: Test your work during development directly from Choreo Agent Builder without an external client.
+type: how-to
+sidebar_label: Overview
+sidebar_position: 1
+keywords:
+  - choreo agent builder
+  - try-it tool
+  - test chat agent
+  - test http service
+  - test mcp
+---
+
+The Try-It tool is a built-in development-time testing interface that lets you send requests to your service and inspect responses without leaving Choreo Agent Builder. Use it as you write code to verify behavior immediately, before committing to automated tests. The tool starts your service automatically when you select **Try It**, so there is no separate run step required.
+
+## Try-It experiences
+
+Different integration types open a different Try-It interface. Select the one that matches your integration:
+
+| Integration type | Try-It experience | Page |
+|---|---|---|
+| **Chat agent** | Conversational chat panel for sending messages and validating agent responses | [Test Chat agent](./try-it-chat.mdx) |
+| **HTTP service** | Request builder with method, URL editor, headers, request body, and response viewer | [Test HTTP service](./try-it-http.mdx) |
+| **MCP server** | MCP Inspector for listing tools and invoking them with input parameters | [Test MCP server](./try-it-mcp.mdx) |
+
+## What's next
+
+- [Agent evaluations](../evaluations/evaluations.mdx) — score agent responses with evalsets and LLM-as-judge
+- [Test Explorer](../test-explorer/test-explorer.mdx) — run automated test suites from the editor

@@ -1,0 +1,61 @@
+---
+title: Ingest Documents into a Knowledge Base
+description: Before an agent can retrieve from a knowledge base, load your documents into it.  # generated from the first paragraph; a writer should improve it
+type: how-to
+sidebar_label: Ingest Documents
+sidebar_position: 4
+keywords:
+  - choreo integrator
+  - choreo cloud
+  - knowledge base
+  - ingestion
+  - rag
+  - rag ingestion
+---
+
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+Before an agent can retrieve from a knowledge base, load your documents into it. Agent Builder does not ingest documents itself: you ingest them in Choreo Cloud, or with your knowledge base provider for [other knowledge bases](#ingest-into-other-knowledge-bases).
+
+With a Choreo Cloud Knowledge Base, Choreo Cloud manages document ingestion, while your Choreo Integrator project connects to the resulting knowledge base to retrieve content at runtime. This separation keeps ingestion out of the query integration and lets you update the indexed content in Choreo Cloud without rebuilding or redeploying the integration.
+
+![Documents flow into Choreo Cloud Ingestion, which stores them in a Choreo Cloud Knowledge Base. Both the ingestion step and the knowledge base are managed by Choreo Cloud.](../../../../assets/img/genai/develop/knowledge-bases/choreo-ingest-documents-cloud-v1.0.png)
+
+:::info Prerequisites
+
+- Access to a Choreo Cloud organization and project.
+- Documents that you want to use to ground agent responses.
+:::
+
+## Create and populate the knowledge base in Choreo Cloud
+
+Follow [Create a knowledge base in Choreo Cloud](https://wso2.com/integration-platform/docs/saas/manage/rag-ingestion/create-knowledge-base) to:
+
+1. Create a knowledge base in your Choreo Cloud project.
+2. Add the documents or data source that you want the knowledge base to index.
+3. Start ingestion and wait until the content is ready to query.
+
+Keep the knowledge base in the same Choreo Cloud project that you select in Choreo Integrator. The editor uses that project context to discover the available knowledge bases and supply their connection details securely.
+
+:::note
+Document ingestion is performed in Choreo Cloud. You do not need to build a separate automation with a data loader, embedding provider, vector store, or `Ingest` action for this workflow.
+:::
+
+## Keep the knowledge base up to date
+
+When source content changes, update or re-ingest it from Choreo Cloud. The query integration continues to use the same knowledge base connection and does not need to change unless you replace the knowledge base itself.
+
+## Ingest into other knowledge bases
+
+If you use a [Vector Knowledge Base](./knowledge-bases.mdx#vector-knowledge-base), an [AWS Bedrock](./knowledge-bases.mdx#aws-bedrock) knowledge base, or an [Azure AI Search Knowledge Base](./knowledge-bases.mdx#azure-ai-search-knowledge-base) instead, ingest documents in one of two ways:
+
+- **Use the provider's own ingestion.** Load the content with the provider's tools, for example by syncing an Amazon S3, SharePoint, or Confluence data source into an Amazon Bedrock knowledge base, or by indexing documents into an existing Azure AI Search index. Then connect your integration to that knowledge base and use it for retrieval only.
+- **Build an ingestion flow in Choreo Integrator.** Read documents with a [Data Loader](./data-loaders.mdx) and pass them to the knowledge base's **Ingest** action. This is the only option for a Vector Knowledge Base, because its chunks must be embedded with the same [Embedding Provider](./embedding-providers.mdx) that the integration uses to retrieve them.
+
+See [Knowledge Bases](./knowledge-bases.mdx) for the connection settings and permissions each knowledge base needs for ingestion.
+
+## What's next
+
+- **[Use with an agent](./use-with-an-agent.mdx)** — expose retrieval as an agent tool and generate grounded responses.
+- **[Choreo Cloud Knowledge Base](./knowledge-bases.mdx#choreo-cloud-knowledge-base)** — configure the Choreo Cloud Knowledge Base connection and retrieval settings.

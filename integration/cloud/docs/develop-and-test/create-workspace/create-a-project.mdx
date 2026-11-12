@@ -1,0 +1,58 @@
+---
+title: Create a Project
+description: Create a project on WSO2 Cloud to organize your integrations.
+type: how-to
+sidebar_position: 2
+---
+
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+A project is the top-level container for your integrations on WSO2 Cloud. Use projects to group related integrations and manage them together. WSO2 Cloud creates a project named **Default** when you first sign up, and you can create more at any time.
+
+:::tip
+If your project already exists in a Git repository, import it instead. See [Import a project](./import-a-project.mdx).
+:::
+
+## Create the project
+
+1. Sign in to [WSO2 Cloud](https://console.devant.dev) and click **Organization** in the top navigation to open the organization overview. It lists all the projects in your organization.
+2. Click **+ Create**.
+
+    ![Create button on the All Projects page](../../../assets/img/create-project/create-project-saas-button.png)
+
+3. In the **Create a Project** form, enter the project details:
+
+    | Field | Description |
+    |---|---|
+    | **Display Name** | A human-readable label shown in the console. |
+    | **Name** | A unique identifier for the project. It is generated from the display name, and you can edit it. It must be unique within the organization. |
+    | **Description** | An optional summary of the project's purpose. |
+
+4. Optionally, under **Connect Your Repository**, link a Git repository to the project. Choose **Authorize With GitHub**, **Authorize with Bitbucket**, **Authorize with GitLab**, or **Use Public GitHub Repository**. For Bitbucket and GitLab, select a saved credential. See [Connect a Git provider](../../deploy-and-run/deploy-to-wso2-cloud/connect-git-provider.mdx) to add one.
+
+    ![Create a Project form](../../../assets/img/create-project/create-project-saas-form.png)
+
+    :::note
+    Connecting a repository here only links its metadata to the project. To bring existing integrations in from a repository, use [Import a project](./import-a-project.mdx) or [Import an integration](./import-an-integration.mdx).
+    :::
+
+5. Click **Create**.
+
+WSO2 Cloud creates the project and opens the project home.
+
+## Add integrations to the project
+
+The **Create Integration** page, which a new project opens on, offers several ways to add your first integration:
+
+![Create Integration page with Create on Cloud, Import an Integration, and Get Started Quickly](../../../assets/img/create-project/create-project-saas-landing.png)
+
+- **Create on Cloud** — Build an integration in the browser-based cloud editor, without installing anything locally. See [Deploy from the cloud editor](../../deploy-and-run/deploy-to-wso2-cloud/deploy-from-cloud-editor.mdx).
+- **Import an Integration** — Connect a Git provider and bring in an existing integration. See [Import an integration](./import-an-integration.mdx).
+- **Get Started Quickly** — Start from a prebuilt integration or a sample. See [Pre-built integrations](../../get-started/prebuilt-integrations.mdx) and [Start with sample integrations](./start-with-sample-integrations.mdx).
+
+## What's next
+
+- [Import a project](./import-a-project.mdx) — Bring an existing project from a Git repository
+- [Import an integration](./import-an-integration.mdx) — Bring a single integration from a Git repository
+- [Manage projects](../../manage/projects.mdx) — View, edit, and delete projects
