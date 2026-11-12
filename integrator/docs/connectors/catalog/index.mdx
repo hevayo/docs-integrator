@@ -1,0 +1,273 @@
+---
+title: Connector Catalog
+description: Searchable catalog of all pre-built connectors available in WSO2 Integrator.
+type: reference
+sidebar_position: 0
+---
+
+Find the right connector for your integration. Use the search bar or filter by category to explore what's available. Select a connector to view its supported operations, authentication setup, and usage examples.
+
+## Built-in
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AI](./ai/index.mdx) | Build AI-powered applications using Large Language Models with direct LLM interaction, intelligent agents with tool use, and Retrieval-Augmented Generation | Multi-turn Chat, Structured Output, Agent Execution, RAG, Embedding, Retrieval | Provider-specific (OpenAI, Anthropic) |
+| [Email](./email/index.mdx) | Send emails via SMTP and receive emails via IMAP and POP3, with attachments, folder management, and email polling support | Send (SMTP), Receive (IMAP/POP3), Poll, Folder Management | SMTP, IMAP, POP3 (SSL/TLS) |
+| [FTP](./ftp/index.mdx) | Access FTP, FTPS, and SFTP servers for reading, writing, and managing remote files and directories, with event-driven file monitoring | Read, Write, Delete, Rename, List, Move, Stream, Poll | FTP, FTPS, SFTP (protocol-based) |
+| [GraphQL](./graphql/index.mdx) | Full-featured GraphQL server framework with automatic schema generation and a client for sending queries and mutations to external endpoints | Query, Mutation, Subscription, Field Interceptors, Caching | Basic Auth, JWT, OAuth2 |
+| [gRPC](./grpc/index.mdx) | Build gRPC servers and clients supporting all four communication patterns with authentication, TLS, deadline propagation, compression, and retry | Unary RPC, Server Streaming, Client Streaming, Bidirectional Streaming | Basic Auth, Bearer Token, JWT, OAuth2, mTLS |
+| [HTTP](./http/index.mdx) | Connect and interact with HTTP and HTTP2 endpoints with outbound requests and inbound request handling, plus failover and load balancing | GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS | Basic, Bearer, JWT, OAuth2 |
+| [MCP](./mcp/index.mdx) | Build MCP clients that consume tools from remote servers and MCP servers that expose tools to AI agents for AI-driven integration flows | Initialize, List Tools, Call Tool, Subscribe, SSE Streaming | None (configurable) |
+| [MQTT](./mqtt/index.mdx) | Lightweight IoT messaging protocol with publish/subscribe support, configurable QoS levels, TLS security, and event-driven message consumption using MQTT v5 | Publish, Subscribe, Receive, Connect, Disconnect, Reconnect | Username/Password, SSL/TLS |
+| [TCP](./tcp/index.mdx) | Create TCP clients for sending and receiving raw bytes over persistent connections, and TCP listeners that accept inbound connections | Connect, Send Bytes, Read Bytes, Close, Inbound Connection Handling | TLS/SSL |
+| [UDP](./udp/index.mdx) | Connectionless and connection-oriented UDP clients for sending and receiving datagrams, with a listener for event-driven UDP services | Send Datagram, Receive Datagram, Connection-oriented Transfer | None |
+| [WebSocket](./websocket/index.mdx) | Synchronous client for connecting to WebSocket servers and a listener for building WebSocket servers, enabling real-time bidirectional communication | Text/Binary Messaging, Typed Read/Write, Ping/Pong, Connection Management | Basic Auth, Bearer Token, JWT, OAuth2, TLS |
+| [WebSub](./websub/index.mdx) | W3C publish-subscribe protocol for real-time content delivery through webhooks with subscriber-side subscription management | Subscribe, Unsubscribe, Hub Discovery, Intent Verification, Content Distribution | HMAC Signature Verification |
+
+## AI & ML
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [Azure AI Search](./azure-ai-search/index.mdx) | Azure AI Search service management for indexes, indexers, data sources, skillsets, and synonym maps | Create, Read, Update, Delete, List, Run, Reset, Analyze, Statistics | API Key |
+| [Azure AI Search Index](./azure-ai-search-index/index.mdx) | AI-powered cloud search with full-text, semantic, and vector search over indexed documents | Search, Lookup, Index, Suggest, Autocomplete, Count | API Key |
+| [Milvus](./milvus/index.mdx) | Open-source vector database for similarity search, vector upsert, and collection management | Create Collection, Load, Index, Upsert, Delete, Search, Query | API Token / Credentials |
+| [Mistral](./mistral/index.mdx) | AI platform with chat completions, code generation, embeddings, OCR, moderation, fine-tuning, and batch processing | Chat, FIM, Embed, OCR, Moderate, Fine-tune, Batch | API Key |
+| [OpenAI](./openai/index.mdx) | AI platform with chat completions, image generation, audio processing, embeddings, assistants, and fine-tuning | Chat, Images, Audio, Embeddings, Assistants, Files, Fine-Tuning, Batches, Moderations | API Key (Bearer Token) |
+| [OpenAI Audio](./openai-audio/index.mdx) | Text-to-speech, transcription, and audio translation using OpenAI TTS and Whisper models | Speech Generation, Transcription, Translation | API Key (Bearer Token) |
+| [OpenAI Fine-Tunes](./openai-fine-tunes/index.mdx) | Fine-tune OpenAI models with custom training data, manage files and models | Upload, Fine-Tune, List, Retrieve, Delete, Monitor | API Key (Bearer Token) |
+
+## Cloud & Infrastructure
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AWS Marketplace MPE](./aws-marketplace-mpe/index.mdx) | Retrieve customer entitlements for AWS Marketplace products | GetEntitlements | AWS Access Keys |
+| [AWS Marketplace MPM](./aws-marketplace-mpm/index.mdx) | AWS Marketplace metering for customer resolution and usage billing | Resolve Customer, Batch Meter Usage | AWS Access Key |
+| [Elastic Cloud](./elastic-cloud/index.mdx) | Elastic Cloud management with deployments, traffic filters, organizations, API keys, and stack versions | Create, List, Search, Update, Shutdown, Restore, Delete | API Key |
+
+## Communication
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AWS SNS](./aws-sns/index.mdx) | Pub/sub messaging service for topic-based notifications, SMS, and mobile push | Create Topic, Publish, Subscribe, Batch Publish, Platform Apps, SMS | AWS Access Keys |
+| [Discord](./discord/index.mdx) | Communication platform with messaging, guild management, roles, webhooks, and slash commands | Send Messages, Manage Channels, Manage Guilds, Manage Roles, Webhooks, Commands | Bot Token / OAuth 2.0 |
+| [Gmail](./gmail/index.mdx) | Email service with message send/receive, drafts, threads, labels, and mailbox history | Send, List, Read, Modify, Delete, Drafts, Threads, Labels | OAuth 2.0 |
+| [Intercom](./intercom/index.mdx) | Customer messaging platform with contacts, conversations, tickets, Help Center articles, tags, and company management | Create, Read, Update, Delete, Search, Reply, Archive | Bearer Token |
+| [Microsoft Teams](./microsoft-teams/index.mdx) | Manage Microsoft Teams teams, channels, members, messages, tabs, and tags via the Microsoft Graph API | Create, Read, Update, Delete | OAuth 2.0 |
+| [Slack](./slack/index.mdx) | Team messaging platform with channels, direct messages, file sharing, and workspace administration | Send Message, Update Message, List Channels, Get History, Search, Upload File, React, Pin | Bearer Token / OAuth 2.0 |
+| [Twilio](./twilio/index.mdx) | Cloud communications platform for SMS, voice calls, WhatsApp, and messaging APIs | Create Message, Fetch Message, List Messages, Create Call, Fetch Call, List Calls, Manage Recordings | HTTP Basic / API Key |
+| [Zoom Meetings](./zoom-meetings/index.mdx) | Video conferencing platform for scheduling, managing, and reporting on meetings and webinars | Create, Read, Update, Delete, List, Register, Record, Report | OAuth 2.0 |
+| [Zoom Scheduler](./zoom-scheduler/index.mdx) | Zoom scheduling service for managing availability windows, meeting schedules, and bookings | Create, Read, Update, Delete, List, Analytics | OAuth 2.0 |
+
+## CRM & Sales
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [HubSpot Automation Actions](./hubspot-automation-actions/index.mdx) | Custom workflow actions for HubSpot CRM with extension definitions, functions, and callback completion | Create, Read, Update, Archive, Callbacks | OAuth 2.0, Developer API Key |
+| [HubSpot CRM Associations](./hubspot-crm-associations/index.mdx) | CRM association management for linking objects like contacts, deals, companies, and tickets | Create, Read, Delete, Batch Create, Batch Read, Batch Archive | OAuth 2.0 |
+| [HubSpot CRM Associations Schema](./hubspot-crm-associations-schema/index.mdx) | HubSpot CRM association schema management for object type relationships and configurations | Create, Read, Update, Delete, Batch Create, Batch Update | OAuth 2.0, API Key |
+| [HubSpot CRM Commerce Carts](./hubspot-crm-commerce-carts/index.mdx) | Commerce cart management with CRUD, search, and batch operations | Create, Read, Update, Delete, Search, Batch | OAuth 2.0 |
+| [HubSpot CRM Commerce Discounts](./hubspot-crm-commerce-discounts/index.mdx) | HubSpot discount management with CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, Private App Token |
+| [HubSpot CRM Commerce Orders](./hubspot-crm-commerce-orders/index.mdx) | HubSpot order management with CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, Private App Token |
+| [HubSpot CRM Commerce Quotes](./hubspot-crm-commerce-quotes/index.mdx) | Commerce quotes management with CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, API Key |
+| [HubSpot CRM Commerce Taxes](./hubspot-crm-commerce-taxes/index.mdx) | Commerce tax management with CRUD, search, and batch operations | Create, Read, Update, Archive, Search, Batch | OAuth 2.0 / API Key |
+| [HubSpot CRM Companies](./hubspot-crm-companies/index.mdx) | Manage HubSpot CRM company records with full CRUD, batch operations, search, and merge | Create, Read, Update, Archive, Batch, Merge, Search | OAuth 2.0 |
+| [HubSpot CRM Contacts](./hubspot-crm-contacts/index.mdx) | HubSpot CRM contacts management with CRUD, batch operations, search, merge, and GDPR deletion | Create, Read, Update, Delete, Batch, Search, Merge, GDPR Delete | OAuth 2.0 / API Key |
+| [HubSpot CRM Deals](./hubspot-crm-deals/index.mdx) | HubSpot CRM deal management with CRUD, batch operations, search, and merge | Create, Read, Update, Archive, Batch, Search, Merge | OAuth 2.0 / API Key |
+| [HubSpot CRM Engagement Meeting](./hubspot-crm-engagement-meeting/index.mdx) | HubSpot meeting engagements with CRUD, batch operations, and search | Create, Read, Update, Delete, Batch, Search | OAuth 2.0 |
+| [HubSpot CRM Engagement Notes](./hubspot-crm-engagement-notes/index.mdx) | Engagement notes API for creating, reading, updating, and searching CRM notes | Create, Read, Update, Archive, Batch, Search | OAuth 2.0 |
+| [HubSpot CRM Engagements Calls](./hubspot-crm-engagements-calls/index.mdx) | Call engagement tracking with CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, API Key |
+| [HubSpot CRM Engagements Communications](./hubspot-crm-engagements-communications/index.mdx) | HubSpot communication records for WhatsApp, LinkedIn, and other messaging channels | Create, Read, Update, Archive, Batch, Search | OAuth 2.0 |
+| [HubSpot CRM Engagements Email](./hubspot-crm-engagements-email/index.mdx) | HubSpot email engagements with CRUD, batch, and search operations | Create, Read, Update, Delete, Batch, Search | OAuth 2.0, API Key |
+| [HubSpot CRM Engagements Tasks](./hubspot-crm-engagements-tasks/index.mdx) | Task engagement tracking with CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, API Key |
+| [HubSpot CRM Extensions Timelines](./hubspot-crm-extensions-timelines/index.mdx) | Custom timeline events on HubSpot CRM records with template and token management | Create, Read, Update, Delete, Batch Create, Render | OAuth 2.0, API Key |
+| [HubSpot CRM Extensions Videoconferencing](./hubspot-crm-extensions-videoconferencing/index.mdx) | Video conferencing settings management for HubSpot apps | Create, Read, Update, Delete | API Key |
+| [HubSpot CRM Feedback](./hubspot-crm-feedback/index.mdx) | HubSpot Feedback Submissions API for reading and managing customer survey feedback data | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, Private App Token |
+| [HubSpot CRM Import](./hubspot-crm-import/index.mdx) | Bulk import contacts, companies, deals, and other CRM objects into HubSpot via CSV | Import, List, Status, Errors, Cancel | OAuth 2.0 |
+| [HubSpot CRM Leads](./hubspot-crm-leads/index.mdx) | HubSpot CRM lead management with full CRUD, batch operations, and search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0 / API Key |
+| [HubSpot CRM Line Items](./hubspot-crm-line-items/index.mdx) | HubSpot CRM line items with single-record CRUD, batch operations, and keyword search | Create, Read, Update, Archive, Batch, Search | OAuth 2.0 / Private App Token |
+| [HubSpot CRM Lists](./hubspot-crm-lists/index.mdx) | CRM list management with dynamic/manual lists, memberships, and folder organization | Create, Read, Update, Delete, Search, Membership, Folders | OAuth 2.0, Private App |
+| [HubSpot CRM Owners](./hubspot-crm-owners/index.mdx) | HubSpot CRM owner retrieval with filtering, pagination, and team assignments | List, Read | OAuth 2.0, Private App Token |
+| [HubSpot CRM Pipelines](./hubspot-crm-pipelines/index.mdx) | CRM pipeline and stage management with full CRUD and audit trail support | Create, Read, Update, Delete, Audit | OAuth 2.0 |
+| [HubSpot CRM Products](./hubspot-crm-products/index.mdx) | HubSpot CRM product catalog management with individual and batch CRUD, search, and upsert | Create, Read, Update, Archive, Batch, Search | OAuth 2.0, Bearer Token |
+| [HubSpot CRM Properties](./hubspot-crm-properties/index.mdx) | CRM property management with CRUD operations, batch processing, and property groups | Create, Read, Update, Archive, Batch | OAuth 2.0 |
+| [HubSpot CRM Schemas](./hubspot-crm-schemas/index.mdx) | Manage HubSpot custom object schemas, properties, and inter-object associations | Create, Read, Update, Delete, Associate | OAuth 2.0, Bearer Token, API Key |
+| [HubSpot CRM Tickets](./hubspot-crm-tickets/index.mdx) | CRM platform for managing customer support ticket records with pipeline and priority tracking | Create, Read, Update, Delete, Search, Merge, Batch | OAuth 2.0 |
+| [Salesforce](./salesforce/index.mdx) | CRM platform with records, queries, bulk data operations, and change event triggers | Create, Read, Update, Delete, Query, Bulk, Events | OAuth 2.0 |
+
+## Database
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AWS Redshift](./aws-redshift/index.mdx) | Cloud data warehouse with SQL queries, batch operations, and stored procedure support | Query, Execute, Batch Execute, Call | Username/Password |
+| [AWS Redshift Data](./aws-redshift-data/index.mdx) | Data warehouse with async SQL execution, batch operations, and streamed result retrieval via the Redshift Data API | Execute, Batch Execute, Query, Describe | AWS Access Key / IAM Role |
+| [CDC](./cdc/index.mdx) | Change Data Capture framework for streaming real-time database row changes (MySQL, PostgreSQL, MSSQL, Oracle) | Snapshot Read, Insert, Update, Delete, Truncate | Database Credentials |
+| [Java JDBC](./java-jdbc/index.mdx) | Generic JDBC database connectivity with queries, DML, batch operations, and stored procedures | Query, Insert, Update, Delete, Batch Execute, Call Procedures | Username/Password |
+| [MongoDB](./mongodb/index.mdx) | Document database with CRUD, aggregation pipelines, and index management | Insert, Find, Update, Delete, Aggregate, Index | SCRAM-SHA-256 / Connection String |
+| [MSSQL](./mssql/index.mdx) | Relational database with SQL queries, batch operations, stored procedures, and CDC event triggers | Query, Execute, Batch Execute, Call, CDC | Username / Password |
+| [MySQL](./mysql/index.mdx) | Relational database with SQL queries, batch operations, stored procedures, and CDC triggers | Query, Insert, Update, Delete, Batch Execute, Call, CDC Events | Username / Password |
+| [Oracle DB](./oracle-db/index.mdx) | Enterprise relational database with SQL queries, DML, stored procedures, and Oracle-specific type support | Query, Execute, Batch Execute, Call, Close | Username/Password |
+| [PostgreSQL](./postgresql/index.mdx) | Object-relational database with SQL queries, batch operations, stored procedures, and CDC triggers | Query, Execute, Batch Execute, Call, CDC | Username/Password |
+| [Redis](./redis/index.mdx) | In-memory data store with string, list, set, sorted set, and hash operations | Get, Set, List, Hash, Set Operations, Sorted Set, Key Management, Flush | Password / ACL |
+| [Snowflake](./snowflake/index.mdx) | Cloud data warehouse with SQL queries, DML/DDL execution, batch operations, and stored procedures | Query, Execute, Batch Execute, Call | Basic Auth, Key-Pair Auth |
+
+## Developer Tools
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AMP](./amp/index.mdx) | Ballerina observability extension that exports OpenTelemetry traces to the WSO2 AI Agent Management Platform | Tracing | API Key |
+| [Copybook](./copybook/index.mdx) | COBOL copybook serialization and deserialization library for mainframe data integration | Serialize, Deserialize, Encode, Decode | None |
+| [GitHub](./github/index.mdx) | Source control platform with repository, issue, pull request, and organization management | Create, Read, Update, Delete, List, Merge, Review | Personal Access Token |
+| [WSO2 APIM Catalog](./wso2-apim-catalog/index.mdx) | WSO2 API Manager Service Catalog for registering and managing backend service definitions | Create, Read, Update, Delete, Import, Export, Settings | OAuth 2.0 Password Grant |
+
+## E-Commerce
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [SAP Commerce](./sap-commerce/index.mdx) | E-commerce platform with product catalog, cart management, orders, and B2B procurement | Products, Carts, Orders, Customers, Stores, Tickets, Quotes | OAuth 2.0 (Client Credentials) |
+| [Shopify Admin](./shopify-admin/index.mdx) | E-commerce platform with product, order, customer, fulfillment, and webhook management | Create, Read, Update, List, Search | API Key |
+
+## ERP & Business
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [Ardoq](./ardoq/index.mdx) | Enterprise architecture platform for modeling business and IT landscapes as connected components, references, and workspaces | Create, Read, Update, Delete, Batch, Reporting | Bearer Token |
+| [Guidewire InsuranceNow](./guidewire-insurancenow/index.mdx) | Insurance platform with applications, policies, claims, drivers, and document management | Create, Read, Update, Delete, Bind, Convert | Basic Auth / Bearer Token |
+| [IBM CTG](./ibm-ctg/index.mdx) | IBM CICS Transaction Gateway connector for invoking mainframe CICS programs via ECI | Execute, Close | Basic (User ID/Password) |
+| [Microsoft Dynamics 365 Finance Budget](./microsoft-dynamics-365-finance-budget/index.mdx) | Budget lifecycle management with budget codes, cycles, plans, allocations, and CP transaction posting | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Cash Management](./microsoft-dynamics-365-finance-cash-management/index.mdx) | Bank account, cash account, cash balance, cash discount, cash ledger, and currency exchange rate management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Core](./microsoft-dynamics-365-finance-core/index.mdx) | Company, business unit, branch, department, address book, and party reference data management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Core Organization](./microsoft-dynamics-365-finance-core-organization/index.mdx) | Legal entity, warehouse, VAT registration, and core organizational reference data management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Customer](./microsoft-dynamics-365-finance-customer/index.mdx) | Customer record, customer group, and customer parameter CRUD for master data management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Customer Account](./microsoft-dynamics-365-finance-customer-account/index.mdx) | Customer electronic address, payment method, payment journal, and posting profile management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Customer Main](./microsoft-dynamics-365-finance-customer-main/index.mdx) | Customer master record CRUD for Microsoft Dynamics 365 Finance | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Document](./microsoft-dynamics-365-finance-document/index.mdx) | Document type, agent feed item, message processing, task guide, and print layout management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Expense](./microsoft-dynamics-365-finance-expense/index.mdx) | Employee expense lifecycle management with expense codes, transactions, mileage, and per diem rates | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Fiscal](./microsoft-dynamics-365-finance-fiscal/index.mdx) | Financial dimension, dimension set, fiscal calendar, fiscal year, and fiscal period management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Fixed Asset](./microsoft-dynamics-365-finance-fixed-asset/index.mdx) | Fixed asset master data, depreciation value models, and leasing/lending record management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance HR Development](./microsoft-dynamics-365-finance-hr-development/index.mdx) | Skill, rating model, job task, course group, team, labor union, and benefit vesting management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Human Resources](./microsoft-dynamics-365-finance-human-resources/index.mdx) | Absence code, holiday, employment, ESS worker profile, and person record management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Journal Entry](./microsoft-dynamics-365-finance-journal-entry/index.mdx) | Journal batch, journal name, journal line, and ledger transaction settlement management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Ledger](./microsoft-dynamics-365-finance-ledger/index.mdx) | Ledger accountant, accrual scheme, audit trail, journal header, and posting journal management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Main Account](./microsoft-dynamics-365-finance-main-account/index.mdx) | Main account, legal entity assignment, ledger, ledger account group, and asset lease book management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Payment](./microsoft-dynamics-365-finance-payment/index.mdx) | Currency, exchange rate, payment calendar, payment method/term, and vendor onboarding data management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Procurement](./microsoft-dynamics-365-finance-procurement/index.mdx) | Delivery term, discount rate schedule, intent letter, and vendor invoice declaration management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Project](./microsoft-dynamics-365-finance-project/index.mdx) | Project, project group, project stage, project task, project grant, and financial forecast management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Receivable](./microsoft-dynamics-365-finance-receivable/index.mdx) | Accounts receivable entity CRUD for Microsoft Dynamics 365 Finance | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance System](./microsoft-dynamics-365-finance-system/index.mdx) | Shared system reference and configuration data management across address, product, and compliance tables | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance System Config](./microsoft-dynamics-365-finance-system-config/index.mdx) | System configuration and reference data record management for Microsoft Dynamics 365 Finance | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Tax](./microsoft-dynamics-365-finance-tax/index.mdx) | Tax entity CRUD for Microsoft Dynamics 365 Finance | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Tax Region](./microsoft-dynamics-365-finance-tax-region/index.mdx) | Tax region entity CRUD for Microsoft Dynamics 365 Finance | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Trade](./microsoft-dynamics-365-finance-trade/index.mdx) | Intrastat declaration, foreign trade payment, commodity classification, and customs report management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Users](./microsoft-dynamics-365-finance-users/index.mdx) | User account, security role, user group, channel user, and Azure AD client registration management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Vendor](./microsoft-dynamics-365-finance-vendor/index.mdx) | Vendor record, vendor group, reason code, and accounts payable parameter management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Vendor Extended](./microsoft-dynamics-365-finance-vendor-extended/index.mdx) | Extended vendor tax registration, identification, banking, and localized address record management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Vendor Payment](./microsoft-dynamics-365-finance-vendor-payment/index.mdx) | Vendor payment method, payment journal, pay-when-paid text, and pay agreement management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Microsoft Dynamics 365 Finance Workflow](./microsoft-dynamics-365-finance-workflow/index.mdx) | Workflow template, action class, approval routing, policy rule, and batch job management | List, Create, Get, Update, Delete | OAuth 2.0 (Client Credentials) |
+| [Pricefx](./pricefx/index.mdx) | Cloud-native pricing and revenue management: products, customers, price lists, calculation grids, quotes, contracts, and rebate agreements | Create, Read, Update, Delete, List, Search, Calculate, Submit | Username/Password, API Key, OAuth 2.0, External JWT |
+| [SAP](./sap/index.mdx) | SAP HTTP client with built-in CSRF token handling for S/4HANA and other SAP APIs | GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS | Basic Auth / OAuth 2.0 |
+| [SAP Business One Administration](./sap-business-one-administration/index.mdx) | Administration and setup connector for SAP Business One — manage users, permissions, approvals, alerts, queries, and Web Client settings via the Service Layer. | Create, Read, Update, Delete | Session (company DB, username, password) |
+| [SAP Business One Banking](./sap-business-one-banking/index.mdx) | Manage SAP Business One banking and payment objects — payments, deposits, checks, bank statements, and reconciliations via the Service Layer. | Create, Read, Update, Delete, Cancel, Reconcile | Session-based (username/password) |
+| [SAP Business One Business Partners](./sap-business-one-business-partners/index.mdx) | Manage SAP Business One business partner master data — customers, vendors, leads, contacts, and related setup — via the Service Layer OData API. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP Business One CRM](./sap-business-one-crm/index.mdx) | Manage SAP Business One CRM objects — activities, campaigns, target groups, and sales opportunities — via the OData Service Layer. | Create, Read, Update, Delete | Session (Company DB, Username, Password) |
+| [SAP Business One Financials](./sap-business-one-financials/index.mdx) | Manage SAP Business One financial accounting objects — chart of accounts, journal entries, budgets, cost accounting dimensions, profit centers, currencies, and tax setup — via the Service Layer. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP Business One Fixed Assets](./sap-business-one-fixed-assets/index.mdx) | Manage fixed asset objects of SAP Business One — capitalization, retirement, transfers, and depreciation setup — via the Service Layer. | Create, Read, Update, Delete, Cancel | Session-based (username/password) |
+| [SAP Business One Human Resources](./sap-business-one-human-resources/index.mdx) | Manage SAP Business One human resources objects — employee master data, teams, positions, and HR setup — through the Service Layer. | Create, Read, Update, Delete | Session-based |
+| [SAP Business One Inventory](./sap-business-one-inventory/index.mdx) | Manage SAP Business One inventory objects — items, warehouses, price lists, stock transactions, batches, serials, and bin locations — via the Service Layer. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP Business One Localization](./sap-business-one-localization/index.mdx) | Manage SAP Business One localization and electronic document objects — electronic documents, Brazil Nota Fiscal codes, India HSN/SAC codes, Israel deduction documents, and more — via the Service Layer. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP Business One Production](./sap-business-one-production/index.mdx) | Manage SAP Business One production and MRP objects — bills of materials, production orders, resources, and forecasts — via the Service Layer OData API. | Create, Read, Update, Delete, Cancel | Session (username/password) |
+| [SAP Business One Projects](./sap-business-one-projects/index.mdx) | Manage SAP Business One project management objects — projects, project management entities, and time sheets — via the Service Layer OData API. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP Business One Purchasing](./sap-business-one-purchasing/index.mdx) | Manage SAP Business One purchasing (A/P) documents — purchase requests, quotations, orders, goods receipts, returns, invoices, and landed costs — via the Service Layer. | Create, Read, Update, Delete, Cancel | Session (username/password) |
+| [SAP Business One Sales](./sap-business-one-sales/index.mdx) | Manage SAP Business One sales (A/R) documents — quotations, orders, deliveries, returns, invoices, credit memos, and dunning — via the Service Layer. | Create, Read, Update, Delete, Cancel | Session (username/password) |
+| [SAP Business One Service](./sap-business-one-service/index.mdx) | Manage SAP Business One service module objects — service calls, contracts, customer equipment cards, and the knowledge base — via the Service Layer OData API. | Create, Read, Update, Delete | Session (username/password) |
+| [SAP JCo](./sap-jco/index.mdx) | Connect to SAP systems via JCo for RFC execution, IDoc exchange, and inbound event handling | RFC Execute, Send IDoc, Receive IDoc, Inbound RFC | SAP Credentials |
+| [SAP Sales Area](./sap-sales-area/index.mdx) | SAP S/4HANA Sales Area master data: retrieve and query Sales Organization, Distribution Channel, and Division combinations | Read, List, Batch Query | Basic Auth |
+| [SAP Sales District](./sap-sales-district/index.mdx) | SAP S/4HANA sales district master data and multilingual text descriptions via OData v2 | List Districts, Get District, List Texts, Get Text, Navigate | Basic Auth |
+| [SAP Sales Inquiry](./sap-sales-inquiry/index.mdx) | Read SAP S/4HANA pre-sales inquiry documents including items, partners, and pricing elements via OData v2 | List, Read | Basic Auth |
+| [SAP Sales Order](./sap-sales-order/index.mdx) | SAP S/4HANA Sales Order (A2X) API for full order lifecycle management including items, billing, pricing, and scheduling | Create, Read, Update, Delete, List | Basic Auth, OAuth 2.0 |
+| [SAP Sales Order Analytics](./sap-sales-order-analytics/index.mdx) | SAP S/4HANA Sales Order OData v4 API for full lifecycle management of sales orders and related entities | Create, Read, Update, Delete, List, Batch | Basic Auth, OAuth 2.0, Bearer Token |
+| [SAP Sales Order Simulation](./sap-sales-order-simulation/index.mdx) | SAP S/4HANA Sales Order Simulation API for synchronous pricing, material availability, and credit limit checks | Simulate, Read, Create, Update, Delete, Batch | Basic Auth, OAuth 2.0, Bearer Token |
+| [SAP Sales Organization](./sap-sales-organization/index.mdx) | SAP S/4HANA Sales Organization master data: lookup and listing of organizational units and multilingual texts | List, Get, Navigate | Basic Auth |
+| [SAP Sales Pricing Condition Record](./sap-sales-pricing-condition-record/index.mdx) | SAP S/4HANA Condition Record for Pricing in Sales API for managing pricing condition records, validity, scales, supplements, and texts | Create, Read, Update, Delete, List, Batch | Basic Auth, OAuth 2.0, Bearer Token |
+| [SAP Sales Quotation](./sap-sales-quotation/index.mdx) | SAP S/4HANA Sales Quotation API with full CRUD, partners, pricing, texts, process flow, and approval actions | Create, Read, Update, Delete, Approve, Reject, Batch | Basic Auth |
+| [SAP SD Incoterms](./sap-sd-incoterms/index.mdx) | SAP S/4HANA OData API for reading Incoterms classification and version master data with multilingual text support | List, Read | Basic Auth |
+| [SAP SD Sold-to-Party Determination](./sap-sd-sold-to-party-determination/index.mdx) | SAP S/4HANA OData service for querying sold-to party assignments in sales scheduling agreements | Read, List | Basic Auth |
+| [SAP Signavio](./sap-signavio/index.mdx) | Business process transformation suite: dictionary, directory, model export/import, ingestion, transformation manager, and SIGNAL Engine OData | Create, Read, Update, Delete, List, Search, Import, Export | Username/Password |
+
+## Finance & Accounting
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [PayPal Invoices](./paypal-invoices/index.mdx) | Invoicing platform with invoice CRUD, payments, refunds, search, and template management | Create, Read, Update, Delete, Send, Search, Templates | OAuth 2.0 (Client Credentials) |
+| [PayPal Orders](./paypal-orders/index.mdx) | Payment orders API with creation, authorization, capture, and shipment tracking | Create, Read, Update, Authorize, Capture, Track | OAuth 2.0 (Client Credentials) |
+| [PayPal Payments](./paypal-payments/index.mdx) | Payment platform with authorization, capture, void, and refund operations | Authorize, Capture, Void, Refund, Show Details | OAuth 2.0 (Client Credentials) |
+| [PayPal Subscriptions](./paypal-subscriptions/index.mdx) | PayPal recurring billing platform for creating subscription plans and managing subscription lifecycles | Create, Read, Update, Activate, Deactivate, Suspend, Cancel, Revise, Capture, List | OAuth 2.0 |
+| [Stripe](./stripe/index.mdx) | Payment processing platform with customers, charges, invoices, subscriptions, and payouts | Create, Read, Update, Delete, List | API Key (Bearer Token) |
+
+## HRMS
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [People HR](./people-hr/index.mdx) | HR management system with employee records, holidays, salaries, vacancies, applicants, and appraisals | Create, Read, Update, Delete, Query | API Key |
+
+## Marketing & Social
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [HubSpot Marketing Campaigns](./hubspot-marketing-campaigns/index.mdx) | Marketing campaign management with CRUD, batch operations, asset associations, and reporting | Create, Read, Update, Delete, Batch, Assets, Metrics, Revenue | OAuth 2.0 / API Key |
+| [HubSpot Marketing Emails](./hubspot-marketing-emails/index.mdx) | Marketing email management with CRUD, A/B testing, drafts, revisions, and statistics | Create, Read, Update, Delete, Publish, Clone, A/B Test, Statistics | OAuth 2.0 |
+| [HubSpot Marketing Events](./hubspot-marketing-events/index.mdx) | Marketing event management with CRUD, attendance tracking, participation analytics, and list associations | Create, Read, Update, Delete, Batch, Attendance, Analytics | OAuth 2.0 |
+| [HubSpot Marketing Forms](./hubspot-marketing-forms/index.mdx) | Marketing forms management with field groups, styling, legal consent, and form lifecycle operations | Create, List, Get, Update, Patch, Archive | OAuth 2.0 |
+| [HubSpot Marketing Subscriptions](./hubspot-marketing-subscriptions/index.mdx) | Communication preference management with subscription status tracking across email, SMS, and WhatsApp | Read, Update, Batch Read, Batch Update, Opt-Out | OAuth 2.0 / API Key |
+| [HubSpot Marketing Transactional](./hubspot-marketing-transactional/index.mdx) | Transactional email sending and SMTP token management via HubSpot Marketing API | Send Email, List Tokens, Create Token, Get Token, Reset Password, Delete Token | OAuth 2.0 |
+| [Mailchimp Marketing](./mailchimp-marketing/index.mdx) | Email marketing platform with audience management, campaigns, automations, and analytics | Create, Read, Update, Delete, Send, Schedule, Search | API Key |
+| [Mailchimp Transactional](./mailchimp-transactional/index.mdx) | Transactional email service with message sending, templates, webhooks, and delivery analytics | Send, Search, Templates, Webhooks, Tags, Senders, Rejects | API Key |
+| [Salesforce Marketing Cloud](./salesforce-marketing-cloud/index.mdx) | Digital marketing platform with journeys, campaigns, contacts, data extensions, assets, and transactional email | Create, Read, Update, Delete, Search, Send, Import | OAuth 2.0 (Client Credentials) |
+| [Twitter](./twitter/index.mdx) | Social media platform with tweet management, user lookup, DMs, likes, retweets, bookmarks, and lists | Create, Read, Delete, Search, Like, Retweet, Bookmark, DM, Follow | OAuth 2.0 |
+
+## Messaging
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AWS SQS](./aws-sqs/index.mdx) | Fully managed message queuing with standard and FIFO queues, batch operations, and event-driven consumption | Send, Receive, Delete, Batch Send, Batch Delete, Queue Management | AWS IAM (Access Key + Secret Key) |
+| [Azure Service Bus](./azure-service-bus/index.mdx) | Enterprise message broker with queues, topics, subscriptions, and event-driven message processing | Send, Receive, Schedule, Settle, Admin, Listen | Connection String |
+| [Confluent Avro SerDes](./confluent-avro-serdes/index.mdx) | Avro serialization and deserialization library using the Confluent Schema Registry wire format | Serialize, Deserialize | API Key |
+| [Confluent Schema Registry](./confluent-schema-registry/index.mdx) | Schema management for Kafka with schema registration and retrieval | Register, Retrieve | API Key |
+| [Google Cloud Pub/Sub](./google-cloud-pub-sub/index.mdx) | Pub/Sub messaging service with topic publishing, subscription consumption, and flow control | Publish, Subscribe, Ack, Nack | GCP Service Account Key |
+| [IBM MQ](./ibm-mq/index.mdx) | Enterprise messaging middleware with queue and topic operations, and event-driven message consumption | Put, Get, Publish, Subscribe, Transactions | Username/Password |
+| [JMS](./jms/index.mdx) | JMS broker integration with queue/topic messaging, durable subscriptions, and event-driven consumption | Send, Receive, Subscribe, Acknowledge, Commit, Rollback | Username/Password |
+| [Kafka](./kafka/index.mdx) | Distributed event streaming with producers, consumers, and listener-based triggers | Produce, Consume, Poll, Subscribe, Commit, Seek | SASL (PLAIN, SCRAM-SHA-256, SCRAM-SHA-512) |
+| [NATS](./nats/index.mdx) | High-performance pub/sub and persistent JetStream messaging with publish, subscribe, request-reply, and stream management | Publish, Subscribe, Request-Reply, Stream Management, Consume | None / Username-Password / Token / Mutual TLS |
+| [RabbitMQ](./rabbitmq/index.mdx) | AMQP 0-9-1 message broker with queue/exchange management, pub/sub, and consumer services | Publish, Consume, Queue Declare, Exchange Declare, Bind, Ack, Nack | Username / Password |
+| [Solace](./solace/index.mdx) | Event broker with publish/subscribe, queuing, durable subscriptions, and listener triggers | Send, Receive, Acknowledge, Commit, Rollback | Basic Auth, Kerberos, OAuth 2.0 |
+
+## Productivity & Collaboration
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [Asana](./asana/index.mdx) | Project management platform with tasks, projects, sections, goals, and team collaboration | Create, Read, Update, Delete, Search, Batch | Personal Access Token / OAuth 2.0 |
+| [Candid](./candid/index.mdx) | Nonprofit data platform with search, profiles, financials, and PDF report downloads | Search, Profile, Lookup, PDF Download | API Key |
+| [DocuSign Admin](./docusign-admin/index.mdx) | DocuSign organization administration with user management, permissions, bulk imports/exports, and group operations | List Organizations, Create User, Update User, Permissions, Groups, Export, Import | OAuth 2.0 |
+| [Google Calendar](./google-calendar/index.mdx) | Calendar and event management with scheduling, quick-add, filtering, and service account delegation | Create, Read, Update, Delete, Query, Quick Add | OAuth 2.0 |
+| [Google Calendar (v2)](./google-gcalendar/index.mdx) | Google Calendar integration for managing calendars, events, ACL rules, and free/busy queries | Create, Read, Update, Delete, List, Free/Busy Query | OAuth 2.0 |
+| [Google Sheets](./google-sheets/index.mdx) | Cloud spreadsheet platform with worksheet management, cell/row/column CRUD, range operations, and data filtering | Create, Read, Update, Delete, Append, Filter | OAuth 2.0 |
+| [Jira](./jira/index.mdx) | Project tracking and issue management with JQL search, workflows, and full CRUD operations | Create, Read, Update, Delete, Search, Transition, Bulk | Basic Auth (API Token) / OAuth 2.0 |
+| [Smartsheet](./smartsheet/index.mdx) | Work management platform with sheets, rows, columns, folders, workspaces, and collaboration | Create, Read, Update, Delete, Share, Search, Webhooks | API Token / OAuth 2.0 |
+| [Trello](./trello/index.mdx) | Project management with boards, lists, cards, checklists, and team collaboration | Create, Read, Update, Delete, Search | API Key + Token |
+
+## Security & Identity
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [AWS Secrets Manager](./aws-secrets-manager/index.mdx) | Secrets management service for retrieving and describing AWS secrets | Describe, Get Secret Value, Batch Get | AWS Access Keys / IAM Role |
+| [SCIM](./scim/index.mdx) | SCIM 2.0 identity provisioning with user, group, and bulk management operations | Create, Read, Update, Delete, Search, Bulk | OAuth 2.0 (Client Credentials) |
+
+## Storage & Files
+
+| Connector | Description | Operations | Authentication |
+|---|---|---|---|
+| [Alfresco](./alfresco/index.mdx) | Enterprise content management platform with document CRUD, versioning, shared links, and collaboration features | Create, Read, Update, Delete, Upload, Download, Copy, Move, Search | Basic Authentication |
+| [AWS S3](./aws-s3/index.mdx) | Object storage with bucket management, object CRUD, presigned URLs, and multipart uploads | Create, Read, Delete, List, Presign, Multipart Upload | AWS Access Keys / IAM Role |
+| [Azure Storage Service](./azure-storage-service/index.mdx) | Azure Blob Storage with container management, blob CRUD, and SAS token support | Create, Read, Delete, List, Upload, Download | Connection String / SAS Token |
+| [Microsoft OneDrive](./microsoft-onedrive/index.mdx) | Cloud file storage with drive/item CRUD, content upload/download, sharing, and search | List, Create, Read, Update, Delete, Upload, Download, Copy, Share, Search | OAuth 2.0 |
+| [Microsoft SharePoint Pages](./microsoft-sharepoint-pages/index.mdx) | Manage Microsoft SharePoint site pages, canvas layouts, sections, and web parts via Microsoft Graph API. | Create, Read, Update, Delete, Publish | OAuth 2.0 |
+| [Microsoft SharePoint Sites](./microsoft-sharepoint-sites/index.mdx) | Manage Microsoft SharePoint sites, lists, content types, columns, drives, permissions, and analytics via Microsoft Graph API | Create, Read, Update, Delete | OAuth 2.0 |
