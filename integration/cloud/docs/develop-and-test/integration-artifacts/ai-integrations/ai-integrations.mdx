@@ -1,0 +1,77 @@
+---
+title: AI Integrations
+description: Build AI-powered integrations with Choreo Integrator using direct LLM calls, AI agents, MCP servers, natural functions, and voice agents.
+type: how-to
+sidebar_label: AI Integration Basics
+sidebar_position: 1
+hide_table_of_contents: true
+keywords:
+  - choreo integrator
+  - genai
+  - ai
+  - llm
+  - agent
+  - mcp
+  - natural function
+  - voice agent
+  - model provider
+layout: overview
+---
+
+Choreo Integrator lets you build AI-powered integrations, including direct LLM calls, AI agents, MCP servers, natural functions, and voice agents.
+
+
+### AI Building Blocks
+
+The shared connections every AI feature is built from, starting with model providers.
+
+[AI Building Blocks →](./ai-building-blocks/ai-building-blocks.mdx)
+
+
+### Direct LLMs
+
+The simplest AI block. Add a generate node to a flow, write a prompt, and bind the response to a typed value in a single round-trip.
+
+[Direct LLMs →](./direct-llms/index.mdx)
+
+
+### AI Agents
+
+Autonomous LLM-driven agents that reason over a system prompt, call tools, and keep memory across turns. Covers reusable definitions, multi-agent systems, gated tools, observability, and evaluations.
+
+[AI Agents →](./agents/agents.mdx)
+
+
+### Model Context Protocol (MCP)
+
+Expose a service as MCP tools for AI assistants, or use tools from external MCP servers in your agents.
+
+[Model Context Protocol (MCP) →](./mcp/mcp.mdx)
+
+
+### Natural Functions
+
+Experimental. Write the function body in plain English. The LLM returns a value that conforms to your declared return type.
+
+[Natural Functions →](./natural-functions/index.mdx)
+
+
+### Voice Agent
+
+Expose an AI agent over a voice channel. Choreo Cloud handles speech-to-text and text-to-speech, so your service works only with text.
+
+[Voice Agent →](./voice-agent/index.mdx)
+
+
+
+## Getting started
+
+- **[Build a Sentiment Analyzer](../../../guides/how-to-guides/build-a-sentiment-analyzer.mdx):** Your first AI integration with a direct LLM call.
+- **[Build a Hotel Finder Agent](../../../guides/how-to-guides/build-a-hotel-finder-agent.mdx):** An agent with two custom tools and session-scoped memory.
+
+## Tutorials
+
+- **[Email Generator with Direct LLM](../../../guides/how-to-guides/email-generator-direct-llm.mdx)**
+- **[Building an IT Helpdesk AI Agent with Persistent Memory](../../../guides/business-use-cases/it-helpdesk-chatbot.mdx)**
+- **[Build a customer care agent with MCP](../../../guides/business-use-cases/building-a-customer-care-agent-mcp.mdx)**
+- **[Customer review analyzer with Natural Function](../../../guides/business-use-cases/review-summarizer-natural-function.mdx)**

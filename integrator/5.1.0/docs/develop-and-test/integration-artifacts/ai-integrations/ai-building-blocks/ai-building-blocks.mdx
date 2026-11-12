@@ -1,0 +1,70 @@
+---
+title: AI Building Blocks
+description: Every AI feature in WSO2 Integrator, direct LLM calls, agents, RAG, and natural functions, is composed from the same small set of shared connections and stores.
+type: how-to
+sidebar_label: Building Blocks
+sidebar_position: 1
+hide_table_of_contents: true
+keywords:
+  - wso2 integrator
+  - model provider
+  - embedding provider
+  - vector store
+  - knowledge base
+  - chunker
+  - data loader
+  - rag
+layout: overview
+---
+
+Every AI feature in WSO2 Integrator, direct LLM calls, agents, RAG, and natural functions, is composed from the same small set of shared connections and stores. Configure one once, then reuse it wherever it's needed.
+
+
+### Model Providers
+
+Connect to the LLM behind every prompt: the Default WSO2 provider, OpenAI, Azure OpenAI, Anthropic, Google Vertex, Mistral, DeepSeek, Ollama, and OpenRouter.
+
+[Model Providers →](./model-providers.mdx)
+
+
+### Embedding Providers
+
+Turn text into semantic vectors used on both ingest and query for similarity search.
+
+[Embedding Providers →](./embedding-providers.mdx)
+
+
+### Vector Stores
+
+Persist embeddings and run similarity search across In-Memory, Pinecone, pgvector, Weaviate, or Milvus.
+
+[Vector Stores →](./vector-stores.mdx)
+
+
+### Knowledge Bases
+
+The indexable document store RAG reads from and writes to, composed of a vector store, embedding provider, and chunker.
+
+[Knowledge Bases →](./knowledge-bases.mdx)
+
+
+### Chunkers
+
+Split documents into chunks before embedding. Smaller chunks improve retrieval precision; larger chunks preserve more surrounding context.
+
+[Chunkers →](./chunkers.mdx)
+
+
+### Data Loaders
+
+Read source documents, such as text files or a Microsoft SharePoint library, into `ai:Document` values ready for chunking and ingestion.
+
+[Data Loaders →](./data-loaders.mdx)
+
+
+
+## What's next
+
+- [RAG](../rag/rag.mdx) — Ground LLM responses in your own documents using these building blocks together
+- [AI Agents](../agents/agents.mdx) — Use a model provider to power an agent's reasoning
+- [Direct LLMs](../direct-llms/index.mdx) — Use a model provider directly, with no agent loop

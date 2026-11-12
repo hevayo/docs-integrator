@@ -1,0 +1,9 @@
+# Integrator 5.1.0.
+# Written by tools/rebuild/edition-folders.mjs (Edition layout: folders).
+schemaVersion: 1
+docSpace: integrator
+id: 5.1.0
+name: Integrator 5.1.0
+variables:
+  productName: WSO2 Integrator
+  displayName: WSO2 Integrator {version}

@@ -1,0 +1,30 @@
+---
+title: Operate
+description: 'Monitor and manage a deployed integration''s runtime: pod status, container resources, configs and secrets, health checks, scaling, and deployment tracks.'
+type: how-to
+sidebar_label: Runtime Operations
+sidebar_position: 1
+keywords:
+  - choreo integrator
+  - choreo cloud
+  - operate
+  - runtime
+  - containers
+  - health checks
+  - scaling
+  - deployment tracks
+---
+
+Once an integration is deployed, **Operate** is where you monitor and manage it while it's running — per environment, from the integration's own navigation.
+
+## Operate areas
+
+| Area | Description |
+|---|---|
+| [Runtime Status](./runtime-operations.mdx) | View pod status and resource usage for an environment, and redeploy an integration's release. |
+| [Containers](./containers.mdx) | Set container CPU and memory request/limit. |
+| [Configs & Secrets](./configs-and-secrets.mdx) | Manage environment variables and mounted files, for values that aren't Ballerina configurables. |
+| [Health Checks](./health-checks.mdx) | Configure liveness and readiness probes so unhealthy replicas self-heal. |
+| [Scaling](./scaling.mdx) | Configure autoscaling based on CPU and memory thresholds. |
+| [Deployment Tracks](./deployment-tracks.mdx) | Manage multiple independently buildable and deployable versions of an integration. |
+| [Promotion](./promotion.mdx) | Move a deployment track's build from one environment to the next. |

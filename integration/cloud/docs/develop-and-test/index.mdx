@@ -1,0 +1,138 @@
+---
+title: Build Your Integration
+description: Build, transform, test, and debug integrations with Choreo Integrator.
+type: how-to
+sidebar_label: Overview
+sidebar_position: 0
+hide_table_of_contents: true
+layout: overview
+---
+
+This section covers the Develop and Test phase of the [integration lifecycle](../platform-overview/index.mdx#from-development-to-production): building integrations in the Choreo Integrator editor before anything ships. We assume you're already familiar with the editor's surfaces from the [Editor Tour](../editor/index.mdx).
+
+:::tip
+Start building your integration by prompting [Choreo Integrator Copilot](../editor/copilot/copilot.mdx) to generate a first working version of your integration flow, refine it on the visual designer, and drop into Ballerina pro-code only when you need more precise control; everything stays in sync throughout.
+:::
+
+## Create Integration Workspace
+
+
+### Create integrations
+
+- Start new integration project
+- Explore samples
+- Build libraries
+
+[Create integrations →](./create-workspace/create-workspace.mdx)
+
+
+### Editor TourPrerequisite
+
+- Workspace and views
+- Editors and canvases
+- Choreo Integrator Copilot
+
+[Editor TourPrerequisite →](../editor/index.mdx)
+
+
+
+Moving from another platform? See [Migrate](../migrate/index.mdx).
+
+## Build Integration
+
+### Build with Copilot
+
+- Prompt Copilot to generate a first working version
+- Works across artifacts, logic, and data mapping
+- Iterate in chat, then refine visually or in code
+
+
+
+
+<p class="palette-group-label">Or build visually</p>
+
+
+### Add Integration artifacts
+
+- Automations
+- APIs: HTTP, GraphQL, gRPC, TCP, WebSub
+- Event-driven: Kafka, RabbitMQ, MQTT, Salesforce, GitHub
+- File-driven integrations
+- AI integrations
+- Supportive artifacts
+
+[Add Integration artifacts →](./integration-artifacts/index.mdx)
+
+
+### Design integration logic
+
+- Flow Canvas with Node Palette
+- Control flow and error handling
+- Expressions and query expressions
+- Ballerina pro-code
+
+[Design integration logic →](../editor/canvases/flow-canvas/flow-canvas.mdx)
+
+
+### Use Developer Tools
+
+- Generate code: OpenAPI, GraphQL, AsyncAPI, gRPC
+- Generate code: WSDL, XSD, EDI, Health
+- Data persistence (`bal persist`)
+- Static analysis (`bal scan`)
+
+[Use Developer Tools →](./developer-tools/developer-tools.mdx)
+
+
+### Transform Your Data
+
+- Visual Data Mapper
+- JSON, XML, CSV, and XLSX
+- EDI and YAML/TOML
+- PDF and ZIP processing
+
+[Transform Your Data →](./data-transformation/data-transformation.mdx)
+
+
+
+
+
+## Try, test, and debug Integration
+
+
+### Test Your Integration
+
+- Built-in Try-It tool
+- Unit and data-driven tests
+- Mocking and code coverage
+- AI-generated test cases
+
+[Test Your Integration →](./test/test.mdx)
+
+
+### Debug Your Integration
+
+- Breakpoints and stepping
+- Variable inspection
+- Test debugging
+- Remote debugging
+
+[Debug Your Integration →](./debug-your-integration/index.mdx)
+
+
+### Troubleshoot Your Integration
+
+- Logging
+- Errors and stack traces
+- Strand dumps
+- Performance profiling
+
+[Troubleshoot Your Integration →](./troubleshooting/troubleshooting.mdx)
+
+
+
+## What's next
+
+- [Create a new integration](./create-workspace/create-a-project.mdx) — Start a project in the Choreo Integrator or from the CLI
+- [Design integration logic](../editor/canvases/flow-canvas/flow-canvas.mdx) — Wire up the flow between request and response
+- [Deploy and operate](../deploy-and-run/index.mdx) — Ship your integration once it's ready

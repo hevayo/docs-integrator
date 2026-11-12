@@ -1,0 +1,9 @@
+# Devant: cloud.
+# Written by tools/rebuild/edition-folders.mjs (Edition layout: folders).
+schemaVersion: 1
+docSpace: devant
+id: cloud
+name: Devant Cloud
+variables:
+  productName: WSO2 Integrator
+  displayName: Devant

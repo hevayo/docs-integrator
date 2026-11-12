@@ -1,0 +1,8 @@
+# Agent Builder: the next version, not yet released (no listed Edition).
+# Written by tools/rebuild/edition-folders.mjs (Edition layout: folders).
+schemaVersion: 1
+docSpace: agent-builder
+id: next
+name: Agent Builder next
+variables:
+  productName: Choreo Agent Builder
