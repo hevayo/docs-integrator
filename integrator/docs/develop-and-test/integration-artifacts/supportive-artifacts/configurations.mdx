@@ -115,16 +115,27 @@ Use the **Configurable Variables** panel to set values for your configurable var
 Place a `Config.toml` file at the project root (alongside `Ballerina.toml`) to supply values for configurable variables. The runtime reads it automatically at startup.
 
 ```toml
-[demoorg.helloworldapi]
-token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+[demoorg.connections]
+timeout = 10
+
+[ballerina.http]
+traceLogConsole = true
 ```
 </TabItem>
 <TabItem value="code" label="Ballerina Code">
 `config.bal`
 
 ```ballerina
-# "Token used to authenticate with the Sales API"
-configurable string token = ?;
+configurable string group = "default";
+configurable decimal timeout = ?;
+```
+
+`connections.bal`
+
+```ballerina
+import ballerina/http;
+
+final http:Client weatherEP = check new ("http://localhost:8080", timeout = timeout);
 ```
 </TabItem>
 </Tabs>
